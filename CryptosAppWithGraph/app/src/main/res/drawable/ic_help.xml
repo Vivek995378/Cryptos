@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+  <path
+      android:pathData="M10,1C8.22,1 6.4799,1.5278 4.9999,2.5168C3.5198,3.5057 2.3663,4.9113 1.6851,6.5559C1.0039,8.2004 0.8257,10.01 1.1729,11.7558C1.5202,13.5016 2.3774,15.1053 3.636,16.364C4.8947,17.6226 6.4984,18.4798 8.2442,18.8271C9.99,19.1743 11.7996,18.9961 13.4442,18.3149C15.0887,17.6337 16.4943,16.4802 17.4832,15.0001C18.4722,13.5201 19,11.78 19,10C19,7.613 18.0518,5.3239 16.364,3.636C14.6761,1.9482 12.3869,1 10,1Z"
+      android:strokeWidth="1.7"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/textColor"
+      tools:ignore="VectorRaster" />
+  <path
+      android:pathData="M7,7.2469C7,7.2469 7.045,6.3592 8.0484,5.5948C8.6436,5.1409 9.3571,5.0095 10,5.0004C10.5855,4.9933 11.1084,5.0851 11.4212,5.2261C11.957,5.4675 13,6.0569 13,7.3103C13,8.629 12.0893,9.2281 11.0516,9.8869C10.0139,10.5458 9.7321,11.261 9.7321,12"
+      android:strokeWidth="1.7"
+      android:fillColor="#00000000"
+      tools:ignore="VectorRaster"
+      android:strokeColor="@color/textColor"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M10,16C10.5523,16 11,15.5523 11,15C11,14.4477 10.5523,14 10,14C9.4477,14 9,14.4477 9,15C9,15.5523 9.4477,16 10,16Z"
+      android:fillColor="@color/textColor"
+      tools:ignore="VectorRaster" />
+</vector>

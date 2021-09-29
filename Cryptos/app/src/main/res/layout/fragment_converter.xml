@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="crypto.cryptocurrencies.cryptos.fragment.ConverterFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/bg_gradient"
+        android:gravity="center"
+        android:text="Exchange Cryptos"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundColor"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColor"
+                                android:text="Crypto" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/black_round_corner_box"
+                                android:drawableEnd="@drawable/ic_drop_down_black"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="BITCOIN"
+                                android:textColor="@color/textColor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColor"
+                                android:text="Select Coin" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/black_round_corner_box"
+                                android:drawableEnd="@drawable/ic_drop_down_black"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="BINANCE"
+                                android:textColor="@color/textColor" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                app:cardBackgroundColor="@color/cardColor"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="6dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/linearLayout5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/black_round_corner_box"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="16dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/relativeLayout1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/imageView5"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="8dp"
+                                            android:layout_marginBottom="8dp" />
+
+                                        <TextView
+                                            android:id="@+id/textView22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView25"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            app:autoSizeMaxTextSize="100sp"
+                                            app:autoSizeMinTextSize="12sp"
+                                            app:autoSizeStepGranularity="2sp"
+                                            app:autoSizeTextType="uniform" />
+
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/relativeLayout1"
+                                        android:layout_centerHorizontal="true"
+                                        android:textColor="@color/textColor"
+                                        app:autoSizeMaxTextSize="100sp"
+                                        app:autoSizeMinTextSize="12sp"
+                                        app:autoSizeStepGranularity="2sp"
+                                        app:autoSizeTextType="uniform" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_below="@id/textView23"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:scaleType="fitXY" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                app:cardBackgroundColor="@color/cardColor"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="6dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/linearLayout7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/black_round_corner_box"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="16dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/relativeLayout2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/imageView7"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp"
+                                            android:layout_marginStart="16dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="8dp"
+                                            android:layout_marginBottom="8dp" />
+
+                                        <TextView
+                                            android:id="@+id/textView26"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView29"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:visibility="gone"
+                                            app:autoSizeMaxTextSize="100sp"
+                                            app:autoSizeMinTextSize="12sp"
+                                            app:autoSizeStepGranularity="2sp"
+                                            app:autoSizeTextType="uniform" />
+
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView27"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/relativeLayout2"
+                                        android:layout_centerHorizontal="true"
+                                        android:textColor="@color/textColor"
+                                        app:autoSizeMaxTextSize="100sp"
+                                        app:autoSizeMinTextSize="12sp"
+                                        app:autoSizeStepGranularity="2sp"
+                                        app:autoSizeTextType="uniform" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_below="@id/textView27"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:scaleType="fitXY" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Amount"
+                            android:background="@drawable/black_round_corner_box"
+                            android:inputType="number"
+                            android:padding="16dp"
+                            android:text="1"
+                            android:textCursorDrawable="@drawable/dark_color_cursor"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/hintTextColor"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/editText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:enabled="false"
+                            android:background="@drawable/black_round_corner_box"
+                            android:hint="Exchanged Amount"
+                            android:inputType="number"
+                            android:padding="16dp"
+                            android:textColor="@color/textColor"
+                            android:textColorHint="@color/hintTextColor"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.applovin.mediation.ads.MaxAdView
+                android:id="@+id/maxAdView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                maxads:adUnitId="a0a932ea4e096d80" />
+
+            <com.applovin.mediation.ads.MaxAdView
+                android:id="@+id/maxAdView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                maxads:adUnitId="e5b18fd897389bdc" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/app_gradient"
+        android:text="Exchange"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

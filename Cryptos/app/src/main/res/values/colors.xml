@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42DB51</color>
+    <color name="colorPrimaryDark">#42DB51</color>
+    <color name="colorAccent">#424242</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="lightPrimaryColor">#D94B91</color>
+    <color name="redColor">#FF2020</color>
+
+    <color name="greenColor">#1EC15F</color>
+    <color name="whiteColor">#ffffff</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
+    <color name="hintTextColor">#5F5F5F</color>
+    <color name="iconColor">#555454</color>
+    <color name="backButtonColorGrayAndWhite">#7E7E7E</color>
+    <color name="toolbarColor">#424242</color>
+    <color name="cardColor">#FFFFFF</color>
+    <color name="loginBackColor">#FFFFFF</color>
+    <color name="innerFilledColor">#F5F5F5</color>
+    <color name="buttonColor">#EE6855</color>
+</resources>

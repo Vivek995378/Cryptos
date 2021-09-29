@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cryptos</string>
+    <string name="app_mode">day</string>
+
+    <string name="facebook_app_id">550242789498178</string>
+    <string name="fb_login_protocol_scheme">fb550242789498178</string>
+
+    <string name="releasePassword">cryptosCollector01@!</string>
+    <string name="appLovinSdkKey">rw6siPfpS4wlgeEms7N51ID4NnSEcw45hD409xuDRFknZr8mHAe2TkZpOcDHv4UDWlOPl0yf_3qNHH4KCtDOzO</string>
+
+</resources>

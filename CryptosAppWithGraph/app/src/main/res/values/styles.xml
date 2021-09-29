@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundColor</item>
+        <item name="colorPrimaryDark">@color/toolbarColor</item>
+        <item name="colorAccent">@color/backgroundColor</item>
+        <item name="fontFamily">@font/semi_bold</item>
+        <item name="android:textCursorDrawable">@drawable/theme_color_cursor</item>
+        <item name="colorControlActivated">@color/textColor</item>
+        <item name="background">@color/backgroundColor</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="splashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="progressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/textColor</item>
+    </style>
+
+</resources>

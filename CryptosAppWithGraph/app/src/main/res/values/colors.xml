@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FECF27</color>
+    <color name="colorPrimaryDark">#FECF27</color>
+    <color name="colorAccent">#424242</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="redColor">#FF4034</color>
+
+    <color name="greenColor">#1EC15F</color>
+    <color name="barColor">#F8F8F8</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
+    <color name="hintTextColor">#5F5F5F</color>
+    <color name="iconColor">#ffffff</color>
+    <color name="backButtonColorGrayAndWhite">#FFFFFF</color>
+    <color name="toolbarColor">#424242</color>
+    <color name="cardColor">#424242</color>
+    <color name="loginBackColor">#000000</color>
+    <color name="innerFilledColor">#333333</color>
+    <color name="whiteColor">#FFFFFF</color>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bitcoin</string>
+    <string name="app_mode">day</string>
+
+    <string name="facebook_app_id">1487116214975300</string>
+    <string name="fb_login_protocol_scheme">fb1487116214975300</string>
+
+    <string name="releasePassword">bitcoinCryptos01@!</string>
+    <string name="appLovinSdkKey">0oXPCyFUtwMh3LfXseq1gZCCaHRIVTh36W5VlryeuqO3sf8PT1BtBMS2W-3HVyhXrr23M0cpyDbgsNAS0MO9HK</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="or">or</string>
+    <string name="login_signup">Login | SignUp</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="binance">Binance</string>
+    <string name="price_list">Price List</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="your_name">Your name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

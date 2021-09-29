@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cryptos.cryptocurrency">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+        <activity android:name="crypto.cryptocurrencies.cryptos.activity.aboutAndPrivacy.AboutAndPrivacyActivity"></activity>
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.webView.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.help.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="crypto.cryptocurrencies.cryptos.activity.withdrawHistory.WithdrawHistoryActivity" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.editProfile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.home.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.login.EnterPhoneNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.login.OtpVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.splash.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="crypto.cryptocurrencies.cryptos.activity.coinDetail.CoinDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="crypto.cryptocurrencies.cryptos.otpReceiver.SmsBroadcastReceiver"
+            android:exported="false"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="crypto.cryptocurrencies.cryptos.alarmManager.NotificationReceiver"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/appLovinSdkKey" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.crypto.cryptocurrency.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>
